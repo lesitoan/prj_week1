@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.min.js"></script>
+  </head>
+  <body>
+    <header class="header"></header>
+    <section class="content container">
+      <div class="info">
+        <div class="left-content col-xs-12 col-sm-4">
+          <img
+            class="wwidth-100"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png/635px-B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png"
+            alt=""
+          />
+        </div>
+        <div class="right-content col-xs-12 col-sm-8">
+          <h1 class="title">Bánh mì thịt nướng</h1>
+          <p class="description">
+            Thành phần: Bánh mì, thịt nướng, rau sống, nước sốt.
+          </p>
+          <div class="type">
+            <div>
+              <p>nhỏ</p>
+              <p>20000 vnđ</p>
+            </div>
+            <div>
+              <p>vừa</p>
+              <p>30000 vnđ</p>
+            </div>
+            <div>
+              <p>lớn</p>
+              <p>40000 vnđ</p>
+            </div>
+          </div>
+          <button class="btn btn-delete">Xóa</button>
+          <button class="btn btn-modify">Sửa</button>
+        </div>
+      </div>
+
+      <!-- form inser -->
+      <div class="form-insert">
+        <h2>Thêm món ăn</h2>
+        <form action="/foods" method="POST">
+          <div class="mb-3 col-xs-12 col-sm-6">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Tên món ăn</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="mb-3 col-xs-12 col-sm-6">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Url hình ảnh</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="mb-3 col-xs-12">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Thành phần:</label
+            >
+            <span>+</span>
+          </div>
+          <div class="mb-3 col-xs-12">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Giá:</label
+            >
+            <span>+</span>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <span>&copy; Le Si Toan @_@</span>
+    </footer>
+  </body>
+</html>

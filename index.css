@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 62.5%;
+
+  }
+  
+  :root {
+    --main-color: #EE7621;
+  }
+
+.header {
+    background-color: var(--main-color);
+    min-height: 10vh;
+    margin-bottom: 3rem;
+}
+
+.content {
+    min-height: 100vh;
+}
+
+.footer {
+    margin-top: 3rem;
+    min-height: 5vh;
+    background-color: var(--main-color);
+    color:white;
+}
+
+.card-img-top{
+    max-width: 100%;
+}
+
+.left-content {
+    height: 20rem;
+}
+
+.left-content img {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-content {
+    
+}
+
+.right-content .type {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 2rem;
+}
+
+.btn {
+    background-color: var(--main-color);
+    min-width: 10rem;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.btn:hover,.btn:active {
+    background-color: #d55a1e;
+    color: white;
+}
+
+.form-insert {
+    margin-top: 25rem;
+}
