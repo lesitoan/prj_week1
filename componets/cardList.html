@@ -1,0 +1,14 @@
+{{#each this}}
+<div class="card col-6 col-sm-4 col-md-3 mb-4">
+  <div class="">
+    <img class="card-img" src="{{image}}" alt="{{name}}" />
+    <div class="card-body">
+      <h5 class="card-title">{{name}}</h5>
+      <p class="card-text">Giá: {{minTypePrice types}}</p>
+      <a href="/detail.html?id={{id}}" class="btn btn-warning btn-info"
+        >Xem chi tiết</a
+      >
+    </div>
+  </div>
+</div>
+{{/each}}

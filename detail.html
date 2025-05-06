@@ -13,7 +13,38 @@
     <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.min.js"></script>
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header d-flex justify-content-center">
+      <div class="header-content container d-flex align-items-center">
+        <div class="image-container col-2 me-4">
+          <img
+            class="logo d-flex justify-content-center align-items-center"
+            src="https://quangcaofnbvietnam.com/wp-content/uploads/2022/04/v-400x400.png"
+            alt="logo"
+          />
+        </div>
+        <form class="col-10 search-form">
+          <div class="row w-100">
+            <div class="col-9 col-md-10 pe-1">
+              <input
+                class="search-input form-control"
+                type="search"
+                placeholder="Tìm kiếm món ăn"
+                aria-label="Search"
+              />
+            </div>
+            <div class="col-3 col-md-2 ps-1">
+              <button
+                class="btn btn-search btn-outline-success w-100"
+                type="submit"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </header>
+
     <section class="content container">
       <div class="info">
         <div class="left-content col-xs-12 col-sm-4">
@@ -88,7 +119,8 @@
         </form>
       </div>
     </section>
-    <footer class="footer">
+
+    <footer class="footer text-center py-3">
       <span>&copy; Le Si Toan @_@</span>
     </footer>
   </body>
