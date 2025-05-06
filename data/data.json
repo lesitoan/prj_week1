@@ -3,8 +3,9 @@
     {
       "id": 1,
       "name": "bánh mì",
-      "ingredient": ["bơ", "thịt", "rau thơm"],
+      "ingredients": ["bơ", "thịt", "rau thơm"],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png/635px-B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png",
+      "desciption": "",
       "types": [
         { "name": "small", "value": 12000 },
         { "name": "medium", "value": 20000 },
@@ -14,8 +15,9 @@
     {
       "id": 2,
       "name": "bánh cuốn",
-      "ingredient": ["bột gạo", "nấm mèo", "thịt bằm"],
+      "ingredients": ["bột gạo", "nấm mèo", "thịt bằm"],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png/635px-B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png",
+      "desciption": "",
       "types": [
         { "name": "nhỏ", "value": 15000 },
         { "name": "trung bình", "value": 22000 },
@@ -25,8 +27,9 @@
     {
       "id": 3,
       "name": "bún bò",
-      "ingredient": ["bún", "thịt bò", "rau thơm"],
+      "ingredients": ["bún", "thịt bò", "rau thơm"],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png/635px-B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png",
+      "desciption": "",
       "types": [
         { "name": "nhỏ", "value": 25000 },
         { "name": "trung bình", "value": 30000 },
@@ -36,8 +39,9 @@
     {
       "id": 4,
       "name": "phở",
-      "ingredient": ["bánh phở", "thịt bò", "hành lá"],
+      "ingredients": ["bánh phở", "thịt bò", "hành lá"],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png/635px-B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png",
+      "desciption": "",
       "types": [
         { "name": "nhỏ", "value": 30000 },
         { "name": "trung bình", "value": 35000 },
@@ -47,8 +51,9 @@
     {
       "id": 5,
       "name": "xôi mặn",
-      "ingredient": ["xôi", "lạp xưởng", "trứng cút"],
+      "ingredients": ["xôi", "lạp xưởng", "trứng cút"],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png/635px-B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png",
+      "desciption": "",
       "types": [
         { "name": "nhỏ", "value": 10000 },
         { "name": "trung bình", "value": 15000 },
@@ -58,8 +63,9 @@
     {
       "id": 6,
       "name": "bánh xèo",
-      "ingredient": ["bột gạo", "tôm", "giá đỗ"],
+      "ingredients": ["bột gạo", "tôm", "giá đỗ"],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png/635px-B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png",
+      "desciption": "",
       "types": [
         { "name": "nhỏ", "value": 18000 },
         { "name": "trung bình", "value": 25000 },
@@ -69,8 +75,9 @@
     {
       "id": 7,
       "name": "hủ tiếu",
-      "ingredient": ["hủ tiếu", "xương heo", "hành phi"],
+      "ingredients": ["hủ tiếu", "xương heo", "hành phi"],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png/635px-B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png",
+      "desciption": "",
       "types": [
         { "name": "nhỏ", "value": 20000 },
         { "name": "trung bình", "value": 25000 },
@@ -80,8 +87,9 @@
     {
       "id": 8,
       "name": "cơm tấm",
-      "ingredient": ["cơm", "sườn nướng", "bì", "chả trứng"],
+      "ingredients": ["cơm", "sườn nướng", "bì", "chả trứng"],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png/635px-B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png",
+      "desciption": "",
       "types": [
         { "name": "nhỏ", "value": 25000 },
         { "name": "trung bình", "value": 30000 },
@@ -91,8 +99,9 @@
     {
       "id": 9,
       "name": "bánh bèo",
-      "ingredient": ["bột gạo", "tôm khô", "mỡ hành"],
+      "ingredients": ["bột gạo", "tôm khô", "mỡ hành"],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png/635px-B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png",
+      "desciption": "",
       "types": [
         { "name": "nhỏ", "value": 12000 },
         { "name": "trung bình", "value": 18000 },
@@ -102,8 +111,9 @@
     {
       "id": 10,
       "name": "mì quảng",
-      "ingredient": ["mì", "thịt gà", "đậu phộng"],
+      "ingredients": ["mì", "thịt gà", "đậu phộng"],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png/635px-B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png",
+      "desciption": "",
       "types": [
         { "name": "nhỏ", "value": 22000 },
         { "name": "trung bình", "value": 27000 },
@@ -113,8 +123,9 @@
     {
       "id": 11,
       "name": "cháo lòng",
-      "ingredient": ["cháo", "lòng heo", "hành lá"],
+      "ingredients": ["cháo", "lòng heo", "hành lá"],
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png/635px-B%C3%A1nh_m%C3%AC_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng.png",
+      "desciption": "",
       "types": [
         { "name": "nhỏ", "value": 18000 },
         { "name": "trung bình", "value": 23000 },

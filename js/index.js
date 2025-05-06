@@ -1,6 +1,17 @@
+$(".logo").on("click", function () {
+  window.location.href = "index.html";
+});
+
 $.getJSON("data/data.json", function (data) {
-  let foods = data?.foods || [];
-  data = foods;
+  let foods = [];
+  const prevFoods = localStorage.getItem("foods");
+  if (prevFoods && prevFoods.length > 0) {
+    foods = JSON.parse(prevFoods);
+  } else {
+    foods = data?.foods;
+    localStorage.setItem("foods", JSON.stringify(foods));
+  }
+
   let dataCurrPage = null;
 
   let paginationTemplate = null;
@@ -10,8 +21,12 @@ $.getJSON("data/data.json", function (data) {
     renderHomePage(1);
   });
 
-  function renderHomePage(page) {
-    dataCurrPage = getDataPerPage(page, foods);
+  function renderHomePage(page, data = []) {
+    //init load
+    if (!data || data.length === 0) {
+      data = foods;
+    }
+    dataCurrPage = getDataPerPage(page, data);
     loadHtml(".main-content", "../componets/cardList.html", dataCurrPage.data);
     renderPagination();
   }
@@ -40,6 +55,27 @@ $.getJSON("data/data.json", function (data) {
         }
       });
   }
+
+  //search
+  $(".btn-search").on("click", function (e) {
+    e.preventDefault();
+    const searchValue = $(".search-input").val();
+
+    if (!searchValue) {
+      renderHomePage(1);
+      return;
+    }
+
+    const filteredData = foods.filter((food) => {
+      return matchStrings(searchValue, food.name);
+    });
+    if (filteredData.length === 0) {
+      $(".main").html("<h1>Không tìm thấy món ăn nào</h1>");
+      return;
+    }
+    dataCurrPage = filteredData;
+    renderHomePage(1, filteredData);
+  });
 });
 
 Handlebars.registerHelper("minTypePrice", function (types) {
@@ -63,10 +99,23 @@ const getDataPerPage = (page, data) => {
   };
 };
 
-const loadHtml = (parent, filePath, data) => {
+export const loadHtml = (parent, filePath, data) => {
   $.get(filePath, function (html) {
     var tmpl = Handlebars.compile(html);
     var rs = tmpl(data);
     $(parent).html(rs);
   });
 };
+
+function normalizeString(str) {
+  return str
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
+
+function matchStrings(input, target) {
+  const normalizedInput = normalizeString(input);
+  const normalizedTarget = normalizeString(target);
+  return normalizedTarget.includes(normalizedInput);
+}

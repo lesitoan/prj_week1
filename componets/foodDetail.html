@@ -1,0 +1,20 @@
+<div>
+  {{#with this}}
+  <h1 class="title">{{name}}</h1>
+  <p class="description">Thành phần: <span>{{join ingredients}}</span></p>
+  <div class="types d-flex justify-content-start">
+    {{#each types}}
+    <div
+      class="types__item d-flex flex-column justify-content-center align-items-center"
+    >
+      <span>{{this.name}}</span>
+      <span>{{this.value}} vnđ</span>
+    </div>
+    {{/each}}
+  </div>
+  <div class="btns d-flex justify-content-start align-items-center">
+    <button class="btn btn-danger btn-lg btn-delete">Xóa</button>
+    <button class="btn btn-success btn-lg btn-modify">Sửa</button>
+  </div>
+  {{/with}}
+</div>

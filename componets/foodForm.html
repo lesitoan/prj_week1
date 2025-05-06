@@ -1,0 +1,43 @@
+<div class="form-insert__container">
+  <h2>Thêm món ăn</h2>
+  <form class="row g-3">
+    <div class="mb-3 col-12 col-md-6">
+      <label for="nameFood" class="form-label">Tên món ăn</label>
+      <input
+        type="text"
+        class="nameFood form-control"
+        id="nameFood"
+        placeholder="Nhâp tên món ăn"
+      />
+    </div>
+    <div class="mb-3 col-12 col-md-6">
+      <label for="image-url" class="form-label">Url hình ảnh</label>
+      <input
+        type="text"
+        class="image-url form-control"
+        id="image-url"
+        placeholder="Nhập url hình ảnh"
+      />
+    </div>
+    <div class="mb-3 col-12">
+      <label for="description" class="form-label">Mô tả món ăn</label>
+      <textarea
+        class="description form-control"
+        id="description"
+        placeholder="Nhập mô tả món ăn"
+        rows="4"
+      ></textarea>
+    </div>
+    <div class="mb-3 col-xs-12">
+      <label class="form-label">Thành phần:</label>
+      <span id="add-ingredient" style="cursor: pointer; color: blue">+</span>
+      <div id="ingredient-container"></div>
+    </div>
+
+    <div class="mb-3 col-xs-12">
+      <label class="form-label">Giá:</label>
+      <span id="add-price" style="cursor: pointer; color: blue">+</span>
+      <div id="price-container"></div>
+    </div>
+  </form>
+</div>

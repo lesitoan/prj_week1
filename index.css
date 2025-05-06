@@ -17,6 +17,8 @@ body {
 
 :root {
   --main-color: #ee7621;
+  --main-color-light: #f8b400;
+  --main-color-dark: #d55a1e;
 }
 
 .header {
@@ -33,6 +35,7 @@ body {
   width: 100%;
   height: 100%;
   padding: 1rem;
+  cursor: pointer;
 }
 
 .search-form {
@@ -82,32 +85,10 @@ body {
   font-size: 1.6rem;
 }
 
-.left-content {
-  height: 20rem;
-}
-
-.left-content img {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.right-content .type {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  gap: 2rem;
-}
-
 .btn {
-  background-color: var(--main-color);
-  min-width: 10rem;
-  color: white;
+  min-width: 15rem;
   border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
+  padding: 5rem 24rem;
 }
 
 .btn:hover,
@@ -123,4 +104,79 @@ body {
 /* utils */
 .cursor-pointer {
   cursor: pointer;
+}
+
+/* detail page */
+.left-content__img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-content {
+  font-size: 2rem;
+}
+
+.right-content .title {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.right-content .description span {
+  color: var(--main-color);
+}
+
+.types {
+  margin-bottom: 2rem;
+}
+
+.types__item {
+  font-size: 1.6rem;
+  min-width: 14rem;
+  background-color: var(--main-color-light);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.types__item:not(:first-child) {
+  margin-left: 1rem;
+}
+
+.btns {
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.btns button {
+  padding: 0.6rem 4rem;
+  font-size: 1.6rem;
+}
+/*  */
+
+/* insert form */
+.form-insert__container {
+  margin-top: 4rem;
+  font-size: 1.6rem;
+}
+
+.form-insert__container h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.form-insert__container input,
+.form-insert__container button {
+  padding: 0.8rem;
+  font-size: inherit;
+  line-height: 1.5;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.form-insert__container input::placeholder,
+.form-insert__container textarea::placeholder {
+  font-size: 1.4rem;
 }
